@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form">
+      <form id="userForm">
+        <h1>LocalStorage Application</h1>
+        <label for="userName">User</label>
+        <input
+          type="text"
+          id="userName"
+          placeholder="Enter user name"
+          required
+          autofocus
+        /><br />
+        <label for="age">Age</label>
+        <input
+          type="number"
+          id="age"
+          placeholder="Enter user age"
+          required
+        /><br />
+        <label for="key">Key</label>
+        <input type="text" id="key" placeholder="Enter key" required /><br />
+        <button type="submit">Save user</button>
+      </form>
+      <br />
+      <label for="key">Enter Key to retrieve user</label>
+      <input
+        type="text"
+        id="retrieveKey"
+        placeholder="Enter key to access user"
+        required
+      /><br />
+      <button id="retrieveButton">Retrieve user</button>
+      <br />
+      <div id="userData"></div>
+      <br />
+      <label for="removeKey">Enter Key to delete user</label>
+      <input
+        type="text"
+        id="removeKey"
+        placeholder="removeKey"
+        required
+      /><br />
+      <button id="removeButton">Delete user</button>
+      <br />
+      <button id="clearButton">Delete all users</button>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
